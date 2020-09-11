@@ -11,6 +11,11 @@
         </thead>
         <tbody>
             <tr *ngFor="let dato of datosMockaroo">
+                <td>
+                    <img [src]="dato.FotoPerfil"
+                         alt="imagen persona"
+                         style="max-width: 50px;">
+                </td>
                 <td>{{dato.id}}</td>
                 <td>{{dato.Sexo}}</td>
                 <td>{{dato.email}}</td>
