@@ -1,1 +1,22 @@
-<p>listado-entidad works!</p>
+<div class="table-responsive">
+    <div class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Sexo</th>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dato of datosMockaroo">
+                <td>{{dato.id}}</td>
+                <td>{{dato.Sexo}}</td>
+                <td>{{dato.email}}</td>
+                <td>{{dato.Nombre}}</td>
+                <td>{{dato.Apellido}}</td>
+            </tr>
+        </tbody>
+    </div>
+</div>
