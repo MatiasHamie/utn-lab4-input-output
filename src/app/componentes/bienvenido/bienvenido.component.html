@@ -1,0 +1,24 @@
+<!-- Probando listado entidad -->
+<app-listado-entidad></app-listado-entidad>
+<div class="table-responsive">
+    <div class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Sexo</th>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dato of datosRecibidosDelServicio">
+                <td>{{dato.id}}</td>
+                <td>{{dato.Sexo}}</td>
+                <td>{{dato.email}}</td>
+                <td>{{dato.Nombre}}</td>
+                <td>{{dato.Apellido}}</td>
+            </tr>
+        </tbody>
+    </div>
+</div>
