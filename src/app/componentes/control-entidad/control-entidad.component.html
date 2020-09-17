@@ -1,3 +1,14 @@
-<app-listado-entidad [datosMockaroo]="personasTraidas" (datosOutput)="onEventEmit($event)"></app-listado-entidad>
-<app-detalle-entidad [persona]="personaSeleccionada" (personaEliminada)="borrarPersona($event)"></app-detalle-entidad>
-<app-listado-entidad [datosMockaroo]="personasEliminadas"></app-listado-entidad>
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-2">
+      <app-detalle-entidad [persona]="personaSeleccionada" (personaEliminada)="borrarPersona($event)"></app-detalle-entidad>
+    </div>
+    <div class="col-5">
+      <app-listado-entidad [datosMockaroo]="personasTraidas" (datosOutput)="onEventEmit($event)"></app-listado-entidad>
+    </div>
+    <div class="col-5">
+      <app-listado-entidad [datosMockaroo]="personasEliminadas"></app-listado-entidad>
+    </div>
+  </div>
+</div>
+

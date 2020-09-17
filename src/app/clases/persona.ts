@@ -1,8 +1,8 @@
 export class IPersona {
   id: number;
-  sexo: string;
+  Sexo: string;
   email: string;
-  nombre: string;
-  apellido: string;
+  Nombre: string;
+  Apellido: string;
   FotoPerfil: any;
 }
