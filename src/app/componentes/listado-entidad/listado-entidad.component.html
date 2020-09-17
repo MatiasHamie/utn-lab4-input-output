@@ -1,3 +1,7 @@
+<h5>
+    Mostrando desde Listado Entidad
+</h5>
+
 <div class="table-responsive">
     <div class="table">
         <thead>
@@ -10,17 +14,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let dato of datosMockaroo">
+            <tr *ngFor="let dato of datosMockaroo" (click)="onSelect(dato)">
                 <td>
                     <img [src]="dato.FotoPerfil"
                          alt="imagen persona"
                          style="max-width: 50px;">
                 </td>
                 <td>{{dato.id}}</td>
-                <td>{{dato.Sexo}}</td>
+                <td>{{dato.sexo}}</td>
                 <td>{{dato.email}}</td>
-                <td>{{dato.Nombre}}</td>
-                <td>{{dato.Apellido}}</td>
+                <td>{{dato.nombre}}</td>
+                <td>{{dato.apellido}}</td>
             </tr>
         </tbody>
     </div>

@@ -17,7 +17,10 @@ export class BienvenidoComponent implements OnInit {
   // Ojo que si no agrego el HttpClientModule al APPMODULE no funciona, tira
   // error de nullInjectionError
   ngOnInit(): void {
-    this.servicio.getDatos().subscribe(
+  }
+
+  mostrarPersonas(){
+    this.servicio.getPersonas().subscribe(
       (datos: any) =>{
         this.datosRecibidosDelServicio = datos;
         console.log(datos);
