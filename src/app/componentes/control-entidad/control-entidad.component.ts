@@ -11,6 +11,7 @@ export class ControlEntidadComponent implements OnInit {
 
   personaSeleccionada: IPersona;
   personasTraidas: IPersona[];
+  personasEliminadas: IPersona[] = [];
 
   constructor(private servicio: ServicioPaisesService) { }
 
@@ -26,5 +27,6 @@ export class ControlEntidadComponent implements OnInit {
 
   borrarPersona(persona: IPersona){
     this.personasTraidas = this.personasTraidas.filter(item => JSON.stringify(item) !== JSON.stringify(persona));
+    this.personasEliminadas.push(persona);
   }
 }
