@@ -8,6 +8,7 @@ import { IPersona } from "../../clases/persona";
 })
 export class ListadoEntidadComponent implements OnInit {
 
+  seleccion: IPersona;
   @Input() datosMockaroo: IPersona[];
   @Output() datosOutput: EventEmitter<IPersona> = new EventEmitter();
 
@@ -20,6 +21,7 @@ export class ListadoEntidadComponent implements OnInit {
 
   onSelect(dato){
     this.datosOutput.emit(dato);
+    this.seleccion = dato;
     console.log(dato);
   }
 }
